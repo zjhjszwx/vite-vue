@@ -7,7 +7,7 @@ import ToRef from './components/toRef.vue'
 </script>
 
 <template>
-  <ToRef/>
+  <HelloWorld/>
 </template>
 
 <style>

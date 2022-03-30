@@ -2,7 +2,7 @@
   <div>{{refValue}} {{toRefValue}}</div>
 </template>
 <script>
-import { ref, toRef, toRefs,reactive } from "vue";
+import { ref, toRef, toRefs, reactive } from "vue";
 
 export default {
   setup() {
@@ -15,8 +15,8 @@ export default {
       num: 1,
       name: "baby张",
     });
-    const refsObj = toRefs(state)
-    console.log(refValue, toRefValue, refsObj);
+    const refsObj = toRefs(state);
+    console.log(refValue, toRefValue, refsObj);     
     return {
       refValue,
       toRefValue,

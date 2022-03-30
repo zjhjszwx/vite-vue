@@ -8,12 +8,15 @@
 </template>
 
 <script>
-import { ref, reactive, computed, watchEffect, watch, getCurrentInstance } from "vue";
+import { toRefs, ref, reactive, computed, watchEffect, watch, getCurrentInstance } from "vue";
 export default {
   props: {
     msg: String,
   },
   setup(props, ctx) {
+    // const { title } = toRefs(props) //如果title存在
+    // const title = toRef(props, 'title')  // 如果title不存在
+    // console.log(title.value)
     // console.log(props, ctx, getCurrentInstance());
     const state = reactive({
       count: 0,
@@ -27,7 +30,8 @@ export default {
       return state.count * 3;
     });
 
-    const refnum = ref();
+    // 接收一个参数并将其包裹在一个带有value property的对象中返回
+    let refnum = ref(0);
 
     // 1. watch需要参数，watchEffect不需要传入参数
     // 2. watch只有监听属性发生变化才执行，watchEffect第一次就会自行
