@@ -4,10 +4,11 @@
 import HelloWorld from './components/HelloWorld.vue'
 import LifeCycle from './components/lifecycle.vue'
 import ToRef from './components/toRef.vue'
+import NestedMenu from './components/NestedMenu/index.vue'
 </script>
 
 <template>
-  <HelloWorld/>
+  <NestedMenu/>
 </template>
 
 <style>
