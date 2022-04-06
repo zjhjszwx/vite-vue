@@ -8,7 +8,7 @@ import NestedMenu from './components/NestedMenu/index.vue'
 </script>
 
 <template>
-  <NestedMenu/>
+  <NestedMenu />
 </template>
 
 <style>
